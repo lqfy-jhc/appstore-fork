@@ -1,0 +1,20 @@
+name: SilverDict
+tags:
+    - 工具
+title: SilverDict
+type: tool
+description: SilverDict
+additionalProperties:
+    key: silverdict
+    name: SilverDict
+    tags:
+        - Tool
+    shortDescZh: 基于 Web 的GoldenDict 的替代品
+    shortDescEn: Web-Based Alternative to GoldenDict
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://crissium.github.io/SilverDict/
+    github: https://github.com/Crissium/SilverDict
+    document: https://github.com/Crissium/SilverDict/wiki

@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  silverdict:
+    image: mathdodger/silverdict
+    container_name: ${CONTAINER_NAME}
+    volumes:
+      - "./data/dictionaries/:/root/.silverdict/"
+      - "./data/cache/:/root/.cache/SilverDict/" # Optional mounting of cache
+    ports: 
+      - "${HOST_IP}:${PANEL_APP_PORT_HTTP}:2628"
+    environment: 
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TIME_ZONE}
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
