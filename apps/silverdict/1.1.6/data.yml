@@ -15,4 +15,4 @@ additionalProperties:
       labelZh: 时区
       required: true
       type: text
-    
+
